@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="fonts/font-awesome.min.css">
 	<!-- Bootstrap 4.5 CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css" />
-	<link rel="stylesheet" href="w3css.css">
+	<link rel="stylesheet" href="css/w3.css">
 	<!-- Style CSS -->
 	<link rel="stylesheet" href="css/style.css" />
 	<!-- Google Fonts -->
@@ -25,7 +25,7 @@
 	<input type="checkbox" id="toggler">
 
 	<!-- Start Side Navigation Bar -->
-	<div class="sidebar w3-blue" >
+	<div class="sidebar" >
 		<div class="sidebrand">
 			<h2>
 				<i class="fab fa-accusoft"></i>
@@ -80,78 +80,43 @@
 				</div>
 			</div>
 		</header>
-		<!-- End top Navigation bar -->
+        <div class="main ">
+            <!-- Start Form detail to add a room -->
+            <br><br><br>
+            <div class="rooms mx-auto w-50 w3-section w3-padding-16">
+                <div class="room-card 	w3-card-2 w3-white w3-width w3-padding w3-round-large">
+                    <h3 class="w3-container w3-center w3-padding" style="font-family: cursive;">Update Website</h3>
+                    <form action="." method="POST" enctype="multipart/form-data">
+                        <p>
+                            Section
+                        </p>
+                        <select name="section" class="form-control">
+                            <option value="equipment">Facilities/ Equipments</option>
+                            <option value="equipment">Services offered</option>
+                            <option value="equipment">Slider Images</option>
+                        </select>
+                        <br>
+                        <p>
+                            Description
+                        </p>
+                        <textarea name="description" class="form-control" id="" cols="30" rows="10"></textarea>
+                       <br>
+                        <p>
+                            Upload Image
+                        </p>
+                        <input type="file" name="room_img"  required><br>
+        
+                        <div class="w3-container w3-section">
+                            <!-- <input type="reset" class="w3-btn w3-yellow w3-round-large"> -->
+                            <input type="submit" name="submit" value="submit" class="w3-btn w3-blue w3-round-large w3-right">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- End Form detail to add a room -->
+        </div>
 
-		<!-- Start Contents of the main container -->
-		<main class="main">
-			<div class="cards">
-				<div class="card-single">
-					<div class="details">
-						<span>Quotations</span>
-						<b><h1>5 </h1></b>
-						
-					</div>
-					<div class="icon">
-						<i class="fa fa-users fa-2x"></i>
-					</div>
-				</div>
-				<div class="card-single">
-					<div class="details">
-						<span>Images</span>
-						<h1>8</h1>
-					</div>
-					<div class="icon">
-						<i class="fas fa-bed"></i>
-					</div>			
-				</div>
-			
-				<div class="card-single">
-					<div class="details">
-						<span>Expenses</span>
-						<h1>2300</h1>
-					</div>
-					<div class="icon">
-						<i class="fab fa-adn fa-2x"></i>
-					</div>
-			
-				</div>
-				<div class="card-single">
-					<div class="details">
-						<span> Last login</span>
-						<h4> 13.2.2023</h4>
-					</div>
-					<div class="icon">
-						<i class="fa fa-shopping-bag fa-2x"></i>
-					</div>
-			
-				</div>
-			   
-			</div>
-			
-				
-			
-			<!-- End Admin Analysis Cards -->
-			
-			<!-- Start Analytical graphs for the adminstrator -->
-			<div class="graph-admin">
-				<div class="container   py-2 px-2">
-					<div class="container-fluid">
-						<div class="row ">
-							<div class="col lg-8  md-5">
-								<div id="chart_div" class="graph_1"></div>
-							</div>
-							<div class="col lg-4 md-4">
-								<div id="piechart_3d" class="graph_2"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			   
-			</div>
-		</main>
-		<!-- End Contents of the main container -->
-
-	</div>
+    </div>
 	<!-- EndMain Contents Here with the top navbar -->
 
 	<!-- Custom jquery file -->
