@@ -1,3 +1,6 @@
+<?php include('loginAuth.php'); ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,7 +35,7 @@
         font-size:23px;
         margin:10px;
     }
-    input[type='email'], input[type='password']{
+    input[type='text'], input[type='password']{
         padding-left:40px;
     }
 </style>
@@ -44,17 +47,38 @@
                 <h4 class="w3-center w3-padding m-3">Globe Stationers Limited</h4>
             </div>
             <div class="w-75">
-                <form action="base.html" method="post" class="">                
+                <form  method="POST" action="#">   
+                    <?php
+                        if ($error != '') {
+
+                        echo '
+                            <div class="example-alert">
+                                <div class="alert alert-danger alert-icon alert-dismissible">
+                                    <em class="icon ni ni-cross-circle"></em> <strong>' . $error . '</strong> <button class="close" data-bs-dismiss="alert"></button>
+                                </div>
+                            </div>
+                        ';
+                        } else {
+                            echo 
+                            '
+                            <div class="nk-block-des">
+                                <p>Sign into your account...</p>
+                            </div>
+
+                            '
+                            ;
+                        }
+                    ?>             
                     <div class="mb-5">
                         <i class="fa fa-envelope"></i>
-                        <input type="email" name="email" class="form-control" required placeholder="Enter email">
+                        <input type="text" name="user_name" class="form-control" required placeholder="Enter user_name">
                     </div>
                     <div class="mb-5">
                         <i class="fa fa-lock"></i>
                         <input type="password" name="password" class="form-control" required placeholder="Enter password">
                     </div>
                     <div class="formgroup text-center w3-center">
-                        <input type="submit" class="btn btn-primary" value="login" >
+                        <input type="submit" name="login_submit" class="btn btn-primary" value="login" >
                     </div>
                     <br>   
                     <div class="text-center mb-3">
