@@ -16,7 +16,7 @@ if (isset($_SESSION['user_data'])) {
             $user_name = $_POST['user_name'];
             $password = $_POST['password'];
 
-            $jsonobj =  file_get_contents("http://api.globestationers.com/api/users/loginUser.php?user_name=$user_name&password=$password");
+            $jsonobj =  file_get_contents("https://api.globestationers.com/api/users/loginUser.php?user_name=$user_name&password=$password");
 
             $PHPobj = json_decode($jsonobj);
 

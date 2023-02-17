@@ -55,7 +55,7 @@
                         <label for="id">Select Section:</label>
                         <select name="section" class="form-control" onchange="fetchDescription(this.value)" >
                         <?php 
-                            $jsonobj =  file_get_contents("http://api.globestationers.com/api/section/loadAllSections.php");
+                            $jsonobj =  file_get_contents("https://api.globestationers.com/api/section/loadAllSections.php");
                             
                             $PHPSecObj = json_decode($jsonobj);
                             
@@ -102,7 +102,7 @@
     <script>
         function fetchDescription(id) {
         const xhr = new XMLHttpRequest();
-        xhr.open('GET', `http://api.globestationers.com/api/section/loadSingleSection.php?id=${id}`);
+        xhr.open('GET', `https://api.globestationers.com/api/section/loadSingleSection.php?id=${id}`);
         xhr.onload = function() {
             if (xhr.status === 200) {
                 const response = JSON.parse(xhr.responseText);

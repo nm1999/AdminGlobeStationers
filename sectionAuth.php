@@ -76,7 +76,7 @@ if (isset($_POST['submit_section_update'])) {
         // clear the _POST array data
         $_POST = array();
 
-        $jsonobj =  file_get_contents("http://api.globestationers.com/api/section/updateSection.php?id=$section_id&description=$description&image_url=$image_url");
+        $jsonobj =  file_get_contents("https://api.globestationers.com/api/section/updateSection.php?id=$section_id&description=$description&image_url=$image_url");
 
         $PHPobj = json_decode($jsonobj);
 
