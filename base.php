@@ -1,3 +1,8 @@
+<?php 
+	$url = file_get_contents('https://www.admin.globestationers.com/fetchQuotation.php');
+	$obj = json_decode($url);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -88,7 +93,7 @@
 				<div class="card-single">
 					<div class="details">
 						<span>Quotations</span>
-						<b><h1>5 </h1></b>
+						<b><h1> <?php count( $obj )?> </h1></b>
 						
 					</div>
 					<div class="icon">

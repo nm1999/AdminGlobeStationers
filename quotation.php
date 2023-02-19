@@ -1,5 +1,5 @@
 <?php
-    $url = file_get_contents('http://localhost/globe/api/fetchQuotation.php');
+    $url = file_get_contents('https://www.admin.globestationers.com/fetchQuotation.php');
     $obj = json_decode($url);
 
 ?>
@@ -86,7 +86,7 @@
 					<a href="quotation.html" class="add_room"> <i class="fas fa-bed"></i> <span>View Quotations</span></a>
 				</li>
 				<li>
-					<a href="upload.html" class="food"> <i class="fa fa-user-plus"></i> <span> Upload Images</span></a>
+					<a href="quotation.php" class="food"> <i class="fa fa-user-plus"></i> <span> Upload Images</span></a>
 				</li>
 				<li>
 					<a href="#"> <i class="	fa fa-shopping-bag"></i> <span>Settings</span></a>
