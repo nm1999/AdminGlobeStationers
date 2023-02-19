@@ -26,14 +26,14 @@
             </li>
             </li>
             <li>
-                <form action="#" method="post">
+                <!-- <form action="#" method="post">
                     <button class="btn" name="submit-logout" type="submit">
-                        <!-- <em class="icon ni ni-signout"></em> -->
-                        <i class="	fa fa-power-off"></i>
+                         <em class="icon ni ni-signout"></em> -->
+                        <!-- <i class="	fa fa-power-off"></i>
                         <span>Logout</span>
                     </button>
-                </form>
-                <!-- <a href="/"> <i class="	fa fa-power-off"></i> <span>Logout</span></a> -->
+                </form> --> 
+                <a href="/"> <i class="	fa fa-power-off"></i> <span>Logout</span></a>
             </li>
         </ul>
     </div>
