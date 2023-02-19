@@ -1,3 +1,8 @@
+<?php
+    $url = file_get_contents('http://localhost/globe/api/fetchQuotation.php');
+    $obj = json_decode($url);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -131,38 +136,20 @@
                         <th>Message</th>
                         <th></th>
                     </tr>  
-                    <tr>
-                        <td>JCM Tech</td>
-                        <td>07823623232</td>
-                        <td><a href="mailto:someone@example.com">jcm@tech.com</a></td>
-                        <td>Banner quotation</td>
-                        <td>i want a banner</td>
-                        <td id="myBtn"><i class="fa fa-eye" ></i></td>
-                    </tr>                  
-                    <tr>
-                        <td>JCM Tech</td>
-                        <td>07823623232</td>
-                        <td><a href="mailto:someone@example.com">jcm@tech.com</a></td>
-                        <td>Banner quotation</td>
-                        <td>i want a banner</td>
-                        <td id="myBtn"><i class="fa fa-eye" ></i></td>
-                    </tr>                  
-                    <tr>
-                        <td>JCM Tech</td>
-                        <td>07823623232</td>
-                        <td><a href="mailto:someone@example.com">jcm@tech.com</a></td>
-                        <td>Banner quotation</td>
-                        <td>i want a banner</td>
-                        <td id="myBtn"><i class="fa fa-eye" ></i></td>
-                    </tr>                  
-                    <tr>
-                        <td>JCM Tech</td>
-                        <td>07823623232</td>
-                        <td><a href="mailto:someone@example.com">jcm@tech.com</a></td>
-                        <td>Banner quotation</td>
-                        <td>i want a banner</td>
-                        <td id="myBtn"><i class="fa fa-eye" ></i></td>
-                    </tr>                  
+                    <?php 
+                        foreach($obj as $j){?>
+                            <tr>
+                                <td><?php echo $j->company_name; ?></td>
+                                <td><?php echo $j->contact; ?></td>
+                                <td><a href="mailto:<?php echo $j->email; ?>"><?php echo $j->email; ?></a></td>
+                                <td><?php echo $j->quotation_subject; ?></td>
+                                <td><?php echo $j->quotation_message; ?></td>
+                                <td id="myBtn"><i class="fa fa-eye" ></i></td>
+                            </tr>               
+
+
+                        <?php }
+                    ?>     
                 </table>
 
             </div>

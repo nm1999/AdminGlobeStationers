@@ -12,11 +12,11 @@
     <div class="sidebar-menu">
         <ul>
             <li class="active-li">
-                <a href="#" class="active"><i class="fa fa-home"></i><span>Dashboard</span></a>
+                <a href="base.html" class="active"><i class="fa fa-home"></i><span>Dashboard</span></a>
             </li>
             
             <li>
-                <a href="#" class="add_room"> <i class="fas fa-bed"></i> <span>View Quotations</span></a>
+                <a href="quotation.php" class="add_room"> <i class="fas fa-bed"></i> <span>View Quotations</span></a>
             </li>
             <li>
                 <a href="#" class="food"> <i class="fa fa-user-plus"></i> <span> Upload Images</span></a>
