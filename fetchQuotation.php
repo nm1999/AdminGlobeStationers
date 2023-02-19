@@ -3,9 +3,9 @@ header("Content-Type: application/json");
 header("Access-Control-Allow-Origin: *");
 
 $HOST = "localhost";
-$USER = "root";
-$PASSWORD = "";
-$DB_NAME = "globe";
+$USER = "globadpo_globeStatUser";
+$PASSWORD = "onmsaTWNjw^Z";
+$DB_NAME = "globadpo_globestationers";
 
 // Create connection
 $conn = new mysqli($HOST, $USER, $PASSWORD, $DB_NAME);
