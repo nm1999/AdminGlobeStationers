@@ -5,13 +5,13 @@ function drawVisualization() {
 	// Some raw data (not necessarily accurate)
 	var data = google.visualization.arrayToDataTable([
 		[
-			"Month",
-			"Bolivia",
-			"Ecuador",
-			"Madagascar",
-			"Papua New Guinea",
-			"Rwanda",
-			"Average",
+			"Posters",
+			"Banner",
+			"School materials",
+			"T-shirit printing",
+			"Paper printing",
+			"Food Items",
+			"",
 		],
 		["2004/05", 165, 938, 522, 998, 450, 614.6],
 		["2005/06", 135, 1120, 599, 1268, 288, 682],
@@ -21,7 +21,7 @@ function drawVisualization() {
 	]);
 
 	var options = {
-		title: "Monthly Coffee Production by Country",
+		title: "Monthly sales for Globe Stationers",
 		vAxis: { title: "Cups" },
 		hAxis: { title: "Month" },
 		seriesType: "bars",
