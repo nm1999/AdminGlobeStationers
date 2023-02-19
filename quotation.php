@@ -93,7 +93,7 @@
 				</li>
 				</li>
 				<li>
-					<a href="/"> <i class="	fa fa-power-off"></i> <span>Logout</span></a>
+					<a href="login.php"> <i class="	fa fa-power-off"></i> <span>Logout</span></a>
 				</li>
 			</ul>
 		</div>
